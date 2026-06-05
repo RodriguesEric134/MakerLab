@@ -55,7 +55,7 @@ O controle é realizado por comandos simples enviados pelo Monitor Serial do Ard
 
 ## 5. Alimentação Externa
 
-Os servomotores são alimentados por uma fonte externa configurada para **5V ou 6V**.
+Os servomotores são alimentados por uma fonte externa configurada para **5V ou 6V**, respeitando a faixa de alimentação adequada para micro servomotores 9g.
 
 A alimentação segue esta lógica:
 
@@ -155,11 +155,15 @@ As imagens de evidência estão armazenadas na pasta `/images`.
 /images/comando_D.png
 /images/comando_O.png
 /images/comando_U.png
+/images/modelo_3d_elo.png
+/images/modelo_3d_garra.png
 ```
 
 ---
 
 ## 11. Modelagem 3D
+
+A modelagem 3D foi desenvolvida no **OpenSCAD**, permitindo a criação de peças paramétricas por meio de código.
 
 A pasta `/model` contém os arquivos relacionados à modelagem 3D da garra e do elo estrutural do braço robótico.
 
@@ -182,12 +186,16 @@ Arquivos de modelagem:
 
 ```text
 /model/grip_model.scad
+/model/grip_model.stl
 /model/servo_link_model.scad
+/model/servo_link_model.stl
 ```
 
 O arquivo `grip_model.scad` representa a garra do braço robótico, com formato de pinça para simular a coleta de amostras.
 
 O arquivo `servo_link_model.scad` representa um elo estrutural do braço, com suporte para encaixe de micro servo 9g, furos de articulação e reforço central.
+
+Os arquivos `.stl` representam as versões exportadas dos modelos, em formato universal, para visualização, impressão 3D ou validação em outros softwares de modelagem.
 
 ---
 
@@ -201,14 +209,18 @@ SpaceFire-Monitor-PBML/
 │
 ├── model/
 │   ├── grip_model.scad
-│   └── servo_link_model.scad
+│   ├── grip_model.stl
+│   ├── servo_link_model.scad
+│   └── servo_link_model.stl
 │
 ├── images/
 │   ├── circuito_completo.png
 │   ├── comando_C.png
 │   ├── comando_D.png
 │   ├── comando_O.png
-│   └── comando_U.png
+│   ├── comando_U.png
+│   ├── modelo_3d_elo.png
+│   └── modelo_3d_garra.png
 │
 └── README.md
 ```
