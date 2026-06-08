@@ -231,8 +231,8 @@ SpaceFire-Monitor-PBML/
 
 | Nome                | RM     |
 | ------------------- | ------ |
-| Eric Rodrigues      | 550249 |
 | Bernardo Rocha      | 99209  |
+| Eric Rodrigues      | 550249 |
 | Manoella Waideman   | 98906  |
 | Renato Ichikawa     | 99242  |
 | Victor Hugo Andrade | 550996 |
